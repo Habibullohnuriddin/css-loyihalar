@@ -1,0 +1,24 @@
+.list {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+
+  list-style: none;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+
+  font-size: 80px;
+  text-align: center;
+  align-content: center;
+
+  padding: 2rem;
+  border-radius: 20px;
+
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #109fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
