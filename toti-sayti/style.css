@@ -1,0 +1,62 @@
+.header {
+  /* yuqori tomondan bo'sh joy */
+  padding-top: 56px;
+
+  /* pastki tomondan bo'sh joy */
+  padding-bottom: 56px;
+
+  background-color: #0f1804;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* • hero style • */
+
+.hero {
+  background-image: url("./src/toti.png");
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-position: calc(50% + 406px) calc(50% + 150px);
+  background-size: 900px;
+
+  background-color: #0f1804;
+}
+
+.hero__info {
+  width: 600px;
+  /* background-color: orange; */
+}
+
+.hero__title {
+  color: #9de03f;
+  font-size: 86px;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.hero__text {
+  font-size: 22px;
+  color: #9de03f;
+}
+
+.hero__link {
+  color: #0f1804;
+  background-color: #9de03f;
+  padding: 16px 24px;
+  border-radius: 8px;
+
+  /* (ahrefning ostidagi chiziqni yo'qotish) */
+  text-decoration: none;
+}
+/* • hero style end • */
