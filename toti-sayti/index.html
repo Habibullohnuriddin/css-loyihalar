@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Birds</title>
 
-    <!-- css link -->
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birds</title>
 
-    <!-- archive font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- css link -->
+  <link rel="stylesheet" href="./style.css" />
 
-  <body>
-    <header class="header">
+  <!-- (gasoek font link) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet" />
+
+  <!-- archive font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <!-- logo -->
+        <img class="header__logo" src="./src/logo.svg" alt="" />
+        <a class="btn btn-border" href="">Expedition</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
       <div class="container">
-        <div class="header__wrapper">
-          <!-- logo -->
-          <img src="./src/logo.svg" alt="" />
-          <a href="">Expedition</a>
+        <div class="hero__info">
+          <h1 class="hero__title">
+            Chase the feeling you can’t get from a screen
+          </h1>
+
+          <p class="hero__text">
+            Unleash wonder where the wild comes to life
+          </p>
+
+          <a href="" class="btn">Explore Encounters</a>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__info">
-            <h1 class="hero__title">
-              Chase the feeling you can’t get from a screen
-            </h1>
+    <section class="discover">
+      <div class="container">
+        <div class="discover__wrapper">
 
-            <p class="hero__text">
-              Unleash wonder where the wild comes to life
+          <div class="discover__info">
+            <h2 class="discover__title">
+              Get closer to <span class="discover__title-colored">the wild</span> than ever before
+            </h2>
+            <p class="discover__text">
+              Thrilling, up-close encounters that you’ll never forget
             </p>
 
-            <a href="" class="hero__link">Explore Encounters</a>
+            <a href="#" class="btn">Plan Expedition</a>
+            <a href="#" class="btn btn-border">Explore Encounters</a>
           </div>
+
+          <ul class="discover__list">
+            <li class="discover__item">
+              <h3 class="discover__subtitle">Waterfall <br> Hikes</h3>
+              <p class="discover__subtext">
+                Hike through lush trails and beneath breathtaking waterfalls
+              </p>
+            </li>
+            <li class="discover__item">
+              <h3 class="discover__subtitle">Cave <br> Swimming</h3>
+              <p class="discover__subtext">
+                Swim through stunning caves in crystal-clear waters
+              </p>
+            </li>
+
+            <li class="discover__item">
+              <h3 class="discover__subtitle">Cave <br> Swimming</h3>
+              <p class="discover__subtext">
+                Swim through stunning caves in crystal-clear waters
+              </p>
+            </li>
+
+            <li class="discover__item">
+              <h3 class="discover__subtitle">Cave <br> Swimming</h3>
+              <p class="discover__subtext">
+                Swim through stunning caves in crystal-clear waters
+              </p>
+            </li>
+
+            
+          </ul>
+
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>

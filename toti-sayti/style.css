@@ -1,10 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .header {
   /* yuqori tomondan bo'sh joy */
   padding-top: 56px;
 
   /* pastki tomondan bo'sh joy */
   padding-bottom: 56px;
-
   background-color: #0f1804;
 }
 
@@ -20,6 +25,14 @@
   justify-content: space-between;
 }
 
+.btn {
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: #9de03f;
+  border: 2px solid #9de03f;
+  text-decoration: none;
+}
+
 /* • hero style • */
 
 .hero {
@@ -28,29 +41,33 @@
   padding-top: 120px;
   padding-bottom: 120px;
 
-  background-position: calc(50% + 406px) calc(50% + 150px);
+  background-position: calc(50% + 406px) calc(50% + 200px);
   background-size: 900px;
 
   background-color: #0f1804;
 }
 
 .hero__info {
-  width: 600px;
-  /* background-color: orange; */
+  width: 700px;
 }
 
 .hero__title {
   color: #9de03f;
   font-size: 86px;
-  font-family: "Archivo Black", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  margin-bottom: 32px;
+  font-family: "Gasoek One", sans-serif;
 }
 
 .hero__text {
   font-size: 22px;
   color: #9de03f;
+  font-weight: normal;
+  margin-bottom: 40px;
 }
 
-.hero__link {
+.btn {
   color: #0f1804;
   background-color: #9de03f;
   padding: 16px 24px;
@@ -59,4 +76,100 @@
   /* (ahrefning ostidagi chiziqni yo'qotish) */
   text-decoration: none;
 }
+
+.btn-border {
+  color: #9de03f;
+  border: 2px solid #9de03f;
+  background-color: transparent;
+}
+
+/* • hero style end • */
+
+/* • discover style  • */
+
+.discover__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+}
+
+.discover__info {
+  width: 500px;
+  background-color: pink;
+}
+
+.discover__title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100%;
+  color: #0b1902;
+  font-family: "Gasoek One", sans-serif;
+}
+
+.discover__title-colored {
+  color: #9de03f;
+}
+
+.discover__text {
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: #0b1902;
+
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.discover__list {
+  width: 600px;
+  display: flex;
+  gap: 16px;
+
+  /* ulning nuqtasini yoqotish */
+  list-style: none;
+
+  background-color: yellow;
+
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid red;
+  background-color: #9de03f;
+}
+
+.discover__item {
+  width: 350px;
+  height: 400px;
+  background-color: wheat;
+
+  background-image: url("./src/sharshara.jpg");
+  background-size: cover;
+  background-position: center;
+
+  align-content: end;
+
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+
+  border-radius: 8px;
+}
+
+.discover__subtitle {
+  font-size: 32px;
+  color: #9de03f;
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 500;
+
+  /* matnlarni katta harfda chiqarish */
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.discover__subtext {
+  color: #9de03f;
+  font-size: 16px;
+}
+
 /* • hero style end • */

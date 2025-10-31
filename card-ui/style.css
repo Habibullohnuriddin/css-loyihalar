@@ -30,8 +30,16 @@ h3 {
   margin-bottom: 12px;
 }
 
+@property --aylana {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
 .box::after,
 .box:before {
+  --aylana: 0deg;
+
   content: "";
 
   width: 100%;
@@ -45,9 +53,18 @@ h3 {
 
   padding: 6px;
   border-radius: 12px;
-/* hello */
-  background-color: red;
-  background-image: repeat(red, blue, orange, pink);
+  /* hello */
+  background-image: conic-gradient(from var(--aylana), transparent 60%, red);
+  animation: rangAnimatsiyasi 0.3s linear infinite;
+}
+
+@keyframes rangAnimatsiyasi {
+  from {
+    --aylana: 0deg;
+  }
+  to {
+    --aylana: 360deg;
+  }
 }
 
 .box::before {
